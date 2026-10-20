@@ -1,0 +1,16 @@
+appId: com.wdiodemoapp
+---
+- launchApp
+- tapOn: "Login"
+- tapOn: "Sign up"
+- tapOn: "Email"
+- inputText: "  qa.spaces@example.com  "
+- tapOn: "Password"
+- inputText: "QaTest123!"
+- tapOn: "Confirm password"
+- inputText: "QaTest123!"
+- tapOn:
+    text: "SIGN UP"
+    below:
+      text: "Confirm password"
+- assertVisible: "Please enter a valid email address"
