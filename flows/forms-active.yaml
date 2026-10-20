@@ -3,5 +3,10 @@
 - launchApp
 - tapOn: "Forms"
 - tapOn: "Active"
-- waitForAnimationToEnd
+- extendedWaitUntil:
+    visible: "This button is active"
+    timeout: 5000
+- assertVisible: "This button is active"
 - takeScreenshot: forms-active-alert
+- tapOn: "OK"
+- assertNotVisible: "This button is active"
