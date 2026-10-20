@@ -1,0 +1,7 @@
+﻿appId: com.wdiodemoapp
+---
+- launchApp
+- tapOn: "Forms"
+- assertVisible: "Click to turn the switch ON"
+- tapOn: "switch"
+- assertVisible: "Click to turn the switch OFF"

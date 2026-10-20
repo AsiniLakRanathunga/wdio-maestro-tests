@@ -1,0 +1,7 @@
+﻿appId: com.wdiodemoapp
+---
+- launchApp
+- tapOn: "Forms"
+- tapOn: "Active"
+- waitForAnimationToEnd
+- takeScreenshot: forms-active-alert

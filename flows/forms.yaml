@@ -1,0 +1,8 @@
+﻿appId: com.wdiodemoapp
+---
+- launchApp
+- tapOn: "Forms"
+- tapOn: "Type something"
+- inputText: "Hello Maestro"
+- hideKeyboard
+- assertVisible: "Hello Maestro"

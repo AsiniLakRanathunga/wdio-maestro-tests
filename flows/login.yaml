@@ -1,0 +1,18 @@
+﻿appId: com.wdiodemoapp
+---
+- launchApp
+- tapOn: "Login"
+- tapOn: "Email"
+- eraseText: 50
+- inputText: "qa.signup@example.com"
+- tapOn: "Password"
+- eraseText: 50
+- inputText: "QaTest123!"
+- hideKeyboard
+- tapOn:
+    text: "LOGIN"
+    below:
+      text: "Password"
+- assertVisible: "Success"
+- assertVisible: "You are logged in!"
+- tapOn: "OK"

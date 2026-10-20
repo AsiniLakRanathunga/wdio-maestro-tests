@@ -1,0 +1,20 @@
+﻿appId: com.wdiodemoapp
+---
+- launchApp
+- tapOn: "Login"
+- tapOn: "Sign up"
+- tapOn: "Email"
+- eraseText: 50
+- inputText: "invalid-email"
+- tapOn: "Password"
+- eraseText: 50
+- inputText: "QaTest123!"
+- tapOn: "Confirm password"
+- eraseText: 50
+- inputText: "QaTest123!"
+- hideKeyboard
+- tapOn:
+    text: "SIGN UP"
+    below:
+      text: "Confirm password"
+- assertVisible: "Please enter a valid email address"
