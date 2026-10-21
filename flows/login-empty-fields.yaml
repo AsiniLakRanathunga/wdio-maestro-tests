@@ -1,0 +1,10 @@
+appId: com.wdiodemoapp
+---
+- launchApp
+- tapOn: "Login"
+- tapOn:
+    text: "LOGIN"
+    below:
+      text: "Password"
+- assertVisible: "Please enter a valid email address"
+- assertVisible: "Please enter at least 8 characters"

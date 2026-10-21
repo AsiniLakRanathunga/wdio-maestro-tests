@@ -1,0 +1,12 @@
+appId: com.wdiodemoapp
+---
+- launchApp
+- tapOn: "Login"
+- tapOn: "Email"
+- inputText: "qa.navigation@example.com"
+- tapOn: "Password"
+- inputText: "QaTest123!"
+- tapOn: "Sign up"
+- tapOn: "Login"
+- takeScreenshot: login-after-tab-navigation
+- assertVisible: "qa.navigation@example.com"
