@@ -1,0 +1,19 @@
+appId: com.wdiodemoapp
+---
+- launchApp
+- tapOn: "Login"
+- tapOn: "Sign up"
+- tapOn: "Email"
+- inputText: "qa.signup@example.com"
+- tapOn: "Password"
+- inputText: "QaTest123!"
+- tapOn: "Confirm password"
+- inputText: "QaTest123!"
+- tapOn:
+    text: "SIGN UP"
+    below:
+      text: "Confirm password"
+- extendedWaitUntil:
+    visible: "Signed Up!"
+    timeout: 5000
+- assertVisible: "You successfully signed up!"
